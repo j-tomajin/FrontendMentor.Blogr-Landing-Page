@@ -2,9 +2,55 @@
 @use '../utils/functions' as f;
 /* DISPLAY */
 
+/* BUTTON */
+.btn-style {
+    display: flex;
+    align-items: center;
+    gap: f.rem(16);
+}
+
 /* HEADER DIPLAY */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__navigation {
+        .nav__dropdown {
+            display: flex;
+            flex-direction: column;
+            gap: f.rem(10);
+        }
+
+        .dropdown {
+            transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+            
+            transform: translateY(0.5rem);
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            a {
+                display: block;
+            }
+        }
+
+        .show-dropdown {
+            margin-block: f.rem(24);
+            transform: translateY(0rem);
+            visibility: visible;
+            opacity: 1;
+            position: unset;
+        }
+
+        .account {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: f.rem(28);
+        }
+    }
+}
+
+/* MAIN */
+.main {
 }
