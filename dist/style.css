@@ -1,5 +1,20 @@
 :root {
-  /* Variables here */
+  /* text color */
+  --white: hsl(0, 0%, 100%);
+  --footer-txt: hsl(240, 2%, 79%);
+  --body-txt: hsl(207, 13%, 34%);
+  --headings: hsl(208, 49%, 24%);
+  /* Primary */
+  --cta-txt: hsl(356, 100%, 66%);
+  --cta-hover-bg: hsl(355, 100%, 74%);
+  --btn-toggle: hsl(206, 13%, 41%);
+  --dropdown-txt: hsl(203, 9%, 49%);
+  --footer-bg-clr: hsl(240, 10%, 16%);
+  --dropdown-bg: hsl(0, 0%, 94%);
+  /* Gradient */
+  --nav-link: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  --hero-gradient-bg: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  --body-gradient-bg: linear-gradient(to left, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
 
 /* BOILERPLATE */
@@ -52,7 +67,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  margin: 1em 0;
+  margin-block: 1.5625rem 2.25rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -78,43 +93,164 @@ h6 {
   margin: 0;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Operpass", sans-serif;
+}
+
 a, a:focus, a:visited {
   text-decoration: none;
 }
 
-/* GOOGLE FONTS */
 .btn {
   background-color: transparent;
+}
+
+.btn-style {
+  background-color: transparent;
+  color: var(--headings);
+  margin-inline: auto;
+}
+.btn-style img {
+  transition: 0.3s ease-in-out;
+}
+
+.btn-toggle {
+  color: var(--btn-toggle);
+}
+.btn-toggle img {
+  transform: rotateX(180deg);
+}
+
+.overpass-light {
+  font-family: "Operpass", sans-serif;
+  font-weight: 300;
+}
+
+.overpass-semi-bold {
+  font-family: "Operpass", sans-serif;
+  font-weight: 600;
+}
+
+.ubuntu {
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.ubuntu-semi-bold {
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.ubuntu-bold {
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* HEADER */
 .header {
   width: min(100% - 2.75rem, 69.6875rem);
-  margin-inline: auto;
-  background-color: rgba(255, 192, 203, 0.705);
+  padding-block: 3.125rem;
 }
 .header__navigation {
-  background-color: lightgray;
+  display: none;
+  background-color: var(--white);
   border-radius: 0.5rem;
   text-align: center;
   padding: 2.25rem;
+}
+.header__navigation .dropdown-style {
+  background-color: var(--dropdown-bg);
+  padding: 1.75rem;
+}
+.header__navigation .dropdown-style a {
+  color: var(--dropdown-txt);
+}
+.header__navigation .dropdown-style a:not(:last-child) {
+  margin-bottom: 1.125rem;
+}
+.header__navigation .account a:last-child {
+  color: var(--white);
+  background: var(--nav-link);
+  width: 45%;
+  padding: 1.125rem;
+  border-radius: 50px;
 }
 .header .nav-show {
   display: block;
 }
 
-/* MAIN */ /* SECTION */ /* DISPLAY */
+/* MAIN */
+.main {
+  background: var(--hero-gradient-bg);
+  width: min(100%, 90rem);
+  padding-block: 11.25rem 8.75rem;
+}
+.main__container {
+  width: min(100% - 2.75rem, 62.5rem);
+  margin-inline: auto;
+  text-align: center;
+}
+.main__container h1 {
+  font-size: 2.1875rem;
+  font-size: clamp(2.1875rem, 0.51rem + 7.16vw, 4rem);
+}
+
+/* SECTION */ /* DISPLAY */
+/* BUTTON */
+.btn-style {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* HEADER DIPLAY */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.header__navigation .nav__dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.header__navigation .dropdown {
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  transform: translateY(0.5rem);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+.header__navigation .dropdown a {
+  display: block;
+}
+.header__navigation .show-dropdown {
+  margin-block: 1.5rem;
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+  position: unset;
+}
+.header__navigation .account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
 
+/* MAIN */
 /* POSITION */
 /* HEADER */
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header__navigation {
   position: absolute;
