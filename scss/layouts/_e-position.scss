@@ -1,3 +1,14 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* POSITION */
+
+/* HEADER */
+.header {
+    position: relative;
+    
+    &__navigation {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+    }
+}
