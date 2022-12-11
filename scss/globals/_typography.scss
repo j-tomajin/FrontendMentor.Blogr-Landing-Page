@@ -1,3 +1,4 @@
+@use '../utils/fonts' as font;
 /* TYPOGRAPHY RESET */
 
 p, h1, h2,
@@ -5,6 +6,15 @@ h3, h4, h5,
 h6 {
     overflow-wrap: break-word;
     margin: 0;
+}
+
+body {
+    font-family: font.$ubuntu;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+    font-family: font.$overpass;
 }
 
 a, a:focus, a:visited {
