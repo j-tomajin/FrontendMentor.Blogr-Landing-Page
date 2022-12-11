@@ -6,3 +6,45 @@
     background-color: transparent;
 }
 
+.btn-style {
+    background-color: transparent;
+    color: var(--headings);
+    margin-inline: auto;
+
+    img {
+        transition: .3s ease-in-out;
+    }
+}
+
+.btn-toggle {
+    color: var(--btn-toggle); 
+    
+    img {
+        transform: rotateX(180deg);
+    }
+}
+
+.overpass-light {
+    font-family: font.$overpass;
+    font-weight: 300;
+}
+
+.overpass-semi-bold {
+    font-family: font.$overpass;
+    font-weight: 600;
+}
+
+.ubuntu {
+    font-weight: 400;
+    font-family: font.$ubuntu;
+}
+
+.ubuntu-semi-bold {
+    font-weight: 500;
+    font-family: font.$ubuntu;
+}
+
+.ubuntu-bold {
+    font-weight: 700;
+    font-family: font.$ubuntu;
+}
