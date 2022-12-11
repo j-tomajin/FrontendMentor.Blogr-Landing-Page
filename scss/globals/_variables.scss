@@ -1,3 +1,34 @@
 :root {
-    /* Variables here */
+    /* text color */
+        // txt - white
+    --white: hsl(0, 0%, 100%);
+        // footer txt - grayish blue
+    --footer-txt: hsl(240, 2%, 79%);
+        // body txt - very dark grayish blue
+    --body-txt: hsl(207, 13%, 34%);
+        // headings - very dark blue
+    --headings:  hsl(208, 49%, 24%);
+
+    /* Primary */
+        // light red
+    --cta-txt: hsl(356, 100%, 66%);
+        // hover background - very light red
+    --cta-hover-bg: hsl(355, 100%, 74%);
+        // button toggle
+    --btn-toggle: hsl(206, 13%, 41%);
+    --dropdown-txt: hsl(203, 9%, 49%);
+    
+    // background
+        // footer bg - very dark black blue
+    --footer-bg-clr: hsl(240, 10%, 16%);
+        // dropdown bg
+    --dropdown-bg: hsl(0, 0%, 94%);
+
+    /* Gradient */
+        // sign up gradient bg 
+    --nav-link: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        // hero gradient bg
+    --hero-gradient-bg: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        // body gradient bg
+    --body-gradient-bg: linear-gradient(to left, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
