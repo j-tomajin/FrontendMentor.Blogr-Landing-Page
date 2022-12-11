@@ -1,3 +1,20 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* HEADER */
+.header{
+    width: min(calc(100% - 2.75rem), f.rem(1115));
+    margin-inline: auto;
+    background-color: rgba(255, 192, 203, 0.705);
+
+    &__navigation {
+        // display: none;
+        background-color: lightgray;
+        border-radius: f.rem(8);
+        text-align: center;
+        padding: f.rem(36);
+    }
+
+    .nav-show {
+        display: block;
+    }
+}
