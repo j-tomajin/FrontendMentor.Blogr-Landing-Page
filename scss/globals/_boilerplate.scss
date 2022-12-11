@@ -1,3 +1,4 @@
+@use '../utils/functions' as f;
 /* BOILERPLATE */
 
 html {
@@ -51,7 +52,7 @@ hr {
     // Change color based on your needs
     border-top:1px solid #cccccc;
     // Change margins based on your needs
-    margin:1em 0;
+    margin-block: f.rem(25) f.rem(36);
 }
 
 .sr-only:not(:focus):not(:active) {
