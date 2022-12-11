@@ -4,7 +4,10 @@
 
 /* HEADER */
 .header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     
     &__navigation {
         position: absolute;
