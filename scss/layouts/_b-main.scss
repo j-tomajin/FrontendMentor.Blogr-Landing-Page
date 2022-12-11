@@ -1,3 +1,19 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* MAIN */
+.main {
+    background: var(--hero-gradient-bg);
+    width: min(100%, f.rem(1440));
+    padding-block: f.rem(180) f.rem(140);
+
+    &__container {
+        width: min(calc(100% - 2.75rem), f.rem(1000));
+        margin-inline: auto;
+        text-align: center;
+
+        h1 {
+            font-size: 2.1875rem;
+            font-size: clamp(2.1875rem, 0.51rem + 7.16vw, 4rem);
+        }
+    }
+}
