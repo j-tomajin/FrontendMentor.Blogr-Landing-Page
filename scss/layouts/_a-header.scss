@@ -3,15 +3,39 @@
 /* HEADER */
 .header{
     width: min(calc(100% - 2.75rem), f.rem(1115));
-    margin-inline: auto;
-    background-color: rgba(255, 192, 203, 0.705);
+    padding-block: f.rem(50);
 
     &__navigation {
-        // display: none;
-        background-color: lightgray;
+        display: none;
+        background-color: var(--white);
         border-radius: f.rem(8);
         text-align: center;
         padding: f.rem(36);
+
+        .dropdown-style {
+            background-color: var(--dropdown-bg);
+            padding: f.rem(28);
+
+            
+
+            a {
+                color: var(--dropdown-txt);
+            }
+
+            a:not(:last-child) {
+                margin-bottom: f.rem(18);
+            }
+        }
+
+        .account {
+            a:last-child {
+                color: var(--white);
+                background: var(--nav-link);
+                width: 45%;
+                padding: f.rem(18);
+                border-radius: 50px;
+            }
+        }
     }
 
     .nav-show {
