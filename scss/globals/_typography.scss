@@ -15,6 +15,11 @@ body {
 h1, h2, h3, 
 h4, h5, h6 {
     font-family: font.$overpass;
+    color: var(--headings);
+}
+
+p {
+    color: var(--body-txt);
 }
 
 a, a:focus, a:visited {
