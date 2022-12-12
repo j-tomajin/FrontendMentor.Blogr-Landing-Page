@@ -1,0 +1,33 @@
+@use '../utils/breakpoints' as bp;
+@use '../utils/functions' as f;
+/* SECTION */
+
+/* SECTION - FUTURE */
+.future {
+    width: 100%;
+    text-align: center;
+
+    &__container {
+
+        .future__img {
+            width: 100%;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        & > article {
+            div {
+                h3 {
+                    font-size: f.rem(32);
+                    margin-bottom: f.rem(24);
+                }
+
+                p {
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+}
