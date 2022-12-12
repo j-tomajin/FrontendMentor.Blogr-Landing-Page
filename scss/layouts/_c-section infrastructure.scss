@@ -1,0 +1,44 @@
+@use '../utils/breakpoints' as bp;
+@use '../utils/functions' as f;
+
+.infrastructure {
+    padding: 12.5rem 0 6.875rem;
+    margin-block: 200px;
+    border-radius: 0 f.rem(78);
+
+    // background image
+    background:var(--body-gradient-bg);
+
+    &__bg {
+        border-radius: 0 f.rem(78);
+    }
+
+    &__container {
+        text-align: center;
+        & > div {
+            margin-inline: auto;
+            width: min(95%, f.rem(530));
+        }
+        h4 {
+            font-size: f.rem(32);
+            margin-top: f.rem(64);
+        }
+    }
+
+    @include bp.breakpointMin(xlarge-screen) {
+        padding: 7.5rem 11.25 7.5rem;
+
+        &__container {
+            text-align: left;
+
+            & > div {
+                margin-inline: 0;
+                margin-left: auto;
+
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
