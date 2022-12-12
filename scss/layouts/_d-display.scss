@@ -2,14 +2,14 @@
 @use '../utils/functions' as f;
 /* DISPLAY */
 
-/* BUTTON */
+/* BUTTON DISPLAY */
 .btn-style {
     display: flex;
     align-items: center;
     gap: f.rem(16);
 }
 
-/* HEADER DIPLAY */
+/* HEADER DISPLAY */
 .header {
     display: flex;
     justify-content: space-between;
@@ -51,6 +51,57 @@
     }
 }
 
-/* MAIN */
+/* MAIN DISPLAY */
 .main {
+    article {
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: f.rem(15);
+        }
+    }
+}
+
+/* SECTION - FUTURE DISPLAY */
+.future {
+    // --gap: 3.125rem;
+    &__display {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'img'
+            'article';
+
+        & > article {
+            gap: 3.125rem;
+            gap: clamp(3.125rem, 0.81rem + 9.88vw, 5.625rem);
+        }
+
+        @include bp.breakpointMin(medium-screen) {
+            // --gap: 5.625rem;
+        }
+
+        .future__img {
+            grid-area: img;
+        }
+
+        & > article {
+            grid-area: article;
+        }
+    }
+}
+
+/* LOCAL DISPLAY */
+.flex-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header,
+.main,
+.future {
+    display: none;
 }
