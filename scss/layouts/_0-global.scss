@@ -2,6 +2,25 @@
 @use '../utils/functions' as f;
 @use '../utils/fonts' as font;
 
+/* WIDTH */
+.width-min {
+    width: min(calc(100% - 2.75rem), f.rem(1110));
+    margin-inline: auto;
+}
+
+/* HEADINGS */
+.headings-light {
+    h1, h2, h3, 
+    h4, h5, h6 {
+        color: var(--white);
+    }
+    
+    p {
+        color: var(--footer-txt);
+    }
+}
+
+/* BUTTON STYLE */
 .btn {
     background-color: transparent;
 }
@@ -24,6 +43,39 @@
     }
 }
 
+/* LINKS */
+.link {
+    padding: f.rem(15) f.rem(22);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    transition: all .3s ease-out;
+}
+
+.link-for-free {
+    background-color: var(--white);
+    color: var(--cta-txt);
+
+    @include bp.breakpointMin(medium-screen) {
+        &:hover {
+            background-color: var(--cta-hover-bg);
+            border-color: var(--cta-hover-bg);
+            color: var(--white);
+        }
+    }
+}
+
+.link-learn-more {
+    color: var(--white);
+
+    @include bp.breakpointMin(medium-screen) {
+        &:hover {
+            background-color: var(--white);
+            color: var(--cta-txt);
+        }
+    }
+}
+
+/* GOOGLE FONTS */
 .overpass-light {
     font-family: font.$overpass;
     font-weight: 300;
