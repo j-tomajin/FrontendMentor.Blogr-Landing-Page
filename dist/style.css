@@ -558,7 +558,7 @@ a, a:focus, a:visited {
   margin-top: auto;
   background-color: var(--footer-bg-clr);
   padding-block: 4.0625rem;
-  border-radius: 0 4rem 0 0;
+  border-radius: 0 6.25rem 0 0;
 }
 .footer__container {
   width: min(100%, 69.375rem);
