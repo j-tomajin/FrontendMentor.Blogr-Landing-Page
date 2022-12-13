@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -147,48 +147,62 @@
     </div>
   </section>
 
+  <!-- SECTION - EDITOR -->
+  <section class="editor">
+    <article class="editor__display editor__container editor__position">
+      <picture class="editor__img">
+        <source media="(min-width: 920px)" srcset="./images/illustration-laptop-desktop.svg">
+        <img src="./images/illustration-laptop-mobile.svg" alt="">
+      </picture>
+      <article>
+        <div class="features">
+          <h5>Free, open, simple</h5>
+          <p>
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+        </div>
+        <div class="features">
+          <h5>Powerful tooling</h5>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </article>
+    </article>
+  </section>
 
-
-
-
-
-  <!--  
-    
-  
-    Free, open, simple
-    Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-  
-    Powerful tooling
-    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.
-  
-    Product
-  
-    Overview
-    Pricing
-    Marketplace
-    Features
-    Integrations
-  
-    Company
-  
-    About
-    Team
-    Blog
-    Careers
-  
-    Connect
-    
-    Contact
-    Newsletter
-    LinkedIn -->
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
+    <div class="footer__container footer__display">
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="[Blogr] logo">
+      </div>
+      <div class="footer__nav">
+        Product
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div class="footer__nav">
+        Company
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer__nav">
+        Connect
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/j-tomajin">Jeck</a>.
     </div>
   </footer>
 </body>
