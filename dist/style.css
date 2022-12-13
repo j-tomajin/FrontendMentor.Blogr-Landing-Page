@@ -560,7 +560,6 @@ a, a:focus, a:visited {
   padding-block: 4.0625rem;
 }
 .footer__container {
-  border: 1px solid red;
   width: min(100%, 69.375rem);
   margin-inline: auto;
   text-align: center;
