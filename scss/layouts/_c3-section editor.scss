@@ -1,0 +1,41 @@
+@use '../utils/breakpoints' as bp;
+@use '../utils/functions' as f;
+/* SECTION EDITOR */
+
+.editor {
+    width: 100%;
+    padding-bottom: f.rem(100);
+    margin-inline: auto;
+
+    &__container {
+        width: 100%;
+
+        .editor__img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        & > article {
+            margin-inline: auto;
+            width: calc(100% - 44px);
+
+            .features {
+                width: min(100%, f.rem(525));
+                text-align: center;
+                margin-inline: auto;
+
+                h5 {
+                    font-size: f.rem(32);
+                    margin-bottom: f.rem(24);
+                }
+
+                p {
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+}
