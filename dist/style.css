@@ -238,7 +238,7 @@ a, a:focus, a:visited {
 
 /* MAIN */
 .main {
-  border-radius: 0 0 0 4.875rem;
+  border-radius: 0 0 0 6.25rem;
   background: var(--hero-gradient-bg);
   width: min(100%, 90rem);
   margin-inline: auto;
@@ -289,11 +289,11 @@ a, a:focus, a:visited {
 .infrastructure {
   padding: 12.5rem 0 6.875rem;
   margin-block: 200px;
-  border-radius: 0 4.875rem;
+  border-radius: 0 6.25rem;
   background: var(--body-gradient-bg);
 }
 .infrastructure__bg {
-  border-radius: 0 4.875rem;
+  border-radius: 0 6.25rem;
 }
 .infrastructure__container {
   text-align: center;
