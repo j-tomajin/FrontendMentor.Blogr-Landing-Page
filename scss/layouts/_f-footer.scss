@@ -2,15 +2,42 @@
 @use '../utils/functions' as f;
 /* FOOTER */
 
-footer {
+.footer {
     margin-top: auto;
+    background-color: var(--footer-bg-clr);
+    padding-block: f.rem(65);
+
+    &__container {
+        border: 1px solid red;
+        width: min(100%, f.rem(1110));
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    &__logo {
+        margin-inline: auto;
+    }
+
+    &__nav {
+        color: var(--white);
+
+        a {
+            color: var(--footer-txt);
+        }
+
+        a:first-child {
+            margin-top: f.rem(12);
+        }
+    }
 }
 
 .attribution { 
-    font-size: 11px; 
     text-align: center; 
+    color: var(--footer-txt);
+    font-size: f.rem(12);
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    font-size: f.rem(14);
+    color: var(--white); 
 }
