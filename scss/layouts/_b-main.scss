@@ -2,7 +2,7 @@
 @use '../utils/functions' as f;
 /* MAIN */
 .main {
-    border-radius: 0 0 0 f.rem(78);
+    border-radius: 0 0 0 f.rem(100);
     background: var(--hero-gradient-bg);
     width: min(100%, f.rem(1440));
     margin-inline: auto;
