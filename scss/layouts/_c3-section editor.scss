@@ -4,11 +4,11 @@
 
 .editor {
     width: 100%;
-    padding-bottom: f.rem(100);
+    // padding-bottom: f.rem(100);
+    padding-block: f.rem(100);
     margin-inline: auto;
 
     &__container {
-        width: 100%;
 
         .editor__img {
             width: 100%;
@@ -34,6 +34,21 @@
 
                 p {
                     line-height: 1.7;
+                }
+            }
+        }
+    }
+
+    @include bp.breakpointMin(large-screen) {
+
+        &__container {
+
+            & > article {
+                
+                .features {
+                    margin-inline: 0;
+                    margin-inline-start: auto;
+                    text-align: left;
                 }
             }
         }
