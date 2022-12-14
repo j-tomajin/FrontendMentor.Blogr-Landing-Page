@@ -33,6 +33,16 @@
     img {
         transition: .3s ease-in-out;
     }
+
+    @include  bp.breakpointMin(medium-screen) {
+        color: var(--white);
+        margin-inline: 0;
+
+        &:hover {
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+        }
+    }
 }
 
 .btn-toggle {
