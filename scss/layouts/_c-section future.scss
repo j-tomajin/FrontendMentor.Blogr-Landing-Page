@@ -4,9 +4,14 @@
 
 /* SECTION - FUTURE */
 .future {
+    overflow: hidden;
     padding-block: f.rem(100);
     width: 100%;
     text-align: center;
+
+    h2 {font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.16rem + 1.47vw, 2rem);
+    }
 
     &__container {
 
@@ -19,6 +24,8 @@
         }
 
         & > article {
+            width: min(100%, f.rem(540));
+
             div {
                 h3 {
                     font-size: f.rem(32);
@@ -29,6 +36,16 @@
                     line-height: 1.7;
                 }
             }
+        }
+    }
+
+    @include bp.breakpointMin(large-screen) {
+        h2 {
+            margin-bottom: f.rem(48);
+        }
+
+        &__container {
+            text-align: left;
         }
     }
 }
