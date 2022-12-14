@@ -9,7 +9,6 @@
     border-radius: 0 f.rem(100) 0 0;
 
     &__container {
-        width: min(100%, f.rem(1110));
         margin-inline: auto;
         text-align: center;
     }
@@ -23,10 +22,26 @@
 
         a {
             color: var(--footer-txt);
+
+            &:hover {
+                text-decoration-line: underline;
+                text-decoration-color: var(--white);
+                text-decoration-thickness: 2px;
+            }
         }
 
         a:first-child {
             margin-top: f.rem(12);
+        }
+    }
+
+    @include bp.breakpointMin(large-screen) {
+        &__container {
+            text-align: left;
+        }
+
+        &__logo {
+            margin-inline: 0;
         }
     }
 }
