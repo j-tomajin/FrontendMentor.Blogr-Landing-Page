@@ -1,4 +1,5 @@
 @use '../utils/functions' as f;
+@use '../utils/breakpoints' as bp;
 /* BOILERPLATE */
 
 html {
@@ -53,6 +54,10 @@ hr {
     border-top:1px solid #cccccc;
     // Change margins based on your needs
     margin-block: f.rem(25) f.rem(36);
+
+    @include bp.breakpointMin(medium-screen) {
+        display: none;
+    }
 }
 
 .sr-only:not(:focus):not(:active) {
