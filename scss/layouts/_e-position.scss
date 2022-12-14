@@ -15,6 +15,30 @@
         width: 100%;
         top: 120px;
     }
+
+    @include bp.breakpointMin(medium-screen) {
+        &__navigation {
+            position: unset;
+            width: unset;
+
+            .dropdown-product {
+                position: relative;
+                .dropdown {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            .dropdown-company {
+                position: relative;
+
+                .dropdown {
+                    position: absolute;
+                    left: -5px;
+                }
+            }
+        }
+    }
 }
 
 /* MAIN POSITION */
@@ -75,6 +99,40 @@
     }
 }
 
+/* SECTION - FUTURE */
+.future {
+    @include bp.breakpointMin(xlarge-screen) {
+        position: relative;
+        &__position {
+    
+            .future__img {
+                position: absolute;
+                width: 60%;
+                left: 50%;
+                top: f.rem(64);
+            }
+        }
+    }
+}
+
+/* SECTION - EDITOR POSITION */
+.editor {
+    @include bp.breakpointMin(xlarge-screen) {
+        position: relative;
+    
+        &__position {
+            
+            .editor__img {
+                position: absolute;
+                width: 70%;
+                top: -30%;
+                right: 50%;
+            }
+        }
+    }
+}
+
+/* FOOTER */
 .footer {
     position: relative;
 
