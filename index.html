@@ -6,7 +6,7 @@
 
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>[Blogr]</title>
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,10 @@
         <div class="dropdown-product">
           <button class="btn-style overpass-semi-bold" id="product-btn">
             Product
-            <img src="./images/icon-arrow-dark.svg" alt="">
+            <picture>
+              <source media="(min-width: 780px)" srcset="./images/icon-arrow-light.svg">
+              <img src="./images/icon-arrow-dark.svg" alt="">
+            </picture>
           </button>
           <div class="dropdown-style dropdown">
             <a href="#">Overview</a>
@@ -53,7 +56,10 @@
         <div class="dropdown-company">
           <button class="btn-style overpass-semi-bold" id="company-btn">
             Company
-            <img src="./images/icon-arrow-dark.svg" alt="">
+            <picture>
+              <source media="(min-width: 780px)" srcset="./images/icon-arrow-light.svg">
+              <img src="./images/icon-arrow-dark.svg" alt="">
+            </picture>
           </button>
           <div class="dropdown dropdown-style">
             <a href="#">About</a>
@@ -68,7 +74,10 @@
         <div class="dropdown-connect">
           <button class="btn-style  overpass-semi-bold" id="connect-btn">
             Connect
-            <img src="./images/icon-arrow-dark.svg" alt="">
+            <picture>
+              <source media="(min-width: 780px)" srcset="./images/icon-arrow-light.svg">
+              <img src="./images/icon-arrow-dark.svg" alt="">
+            </picture>
           </button>
           <div class="dropdown-style dropdown">
             <a href="#">Contact</a>
@@ -111,7 +120,7 @@
   <section class="future">
     <h2>Designed for the future</h2>
 
-    <article class="future__container future__display width-min">
+    <article class="future__container future__display future__position width-min">
       <div class="future__img">
         <img src="./images/illustration-editor-mobile.svg" alt="">
       </div> 
@@ -149,7 +158,7 @@
 
   <!-- SECTION - EDITOR -->
   <section class="editor">
-    <article class="editor__display editor__container editor__position">
+    <article class="editor__display editor__container editor__position width-min">
       <picture class="editor__img">
         <source media="(min-width: 920px)" srcset="./images/illustration-laptop-desktop.svg">
         <img src="./images/illustration-laptop-mobile.svg" alt="">
@@ -173,7 +182,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__container footer__display">
+    <div class="footer__container footer__display footer__position width-min">
       <div class="footer__logo">
         <img src="./images/logo.svg" alt="[Blogr] logo">
       </div>
