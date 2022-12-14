@@ -4,7 +4,8 @@
 .main {
     border-radius: 0 0 0 f.rem(100);
     background: var(--hero-gradient-bg);
-    width: min(100%, f.rem(1440));
+    // width: min(100%, f.rem(1440));
+    width: 100%;
     margin-inline: auto;
     padding-block: f.rem(180) f.rem(140);
     overflow: hidden;
