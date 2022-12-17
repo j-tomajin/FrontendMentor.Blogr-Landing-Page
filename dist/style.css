@@ -473,20 +473,24 @@ a, a:focus, a:visited {
     padding-block: 3.125rem;
     gap: 2rem;
   }
-  .header__navigation {
+  .header__navigation,
+.header .nav-show {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .header__navigation .nav__dropdown {
+  .header__navigation .nav__dropdown,
+.header .nav-show .nav__dropdown {
     flex-direction: row;
     align-items: center;
   }
-  .header__navigation .account {
+  .header__navigation .account,
+.header .nav-show .account {
     flex-direction: row;
   }
-  .header__navigation .show-dropdown {
+  .header__navigation .show-dropdown,
+.header .nav-show .show-dropdown {
     position: absolute;
   }
 }
