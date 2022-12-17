@@ -57,7 +57,8 @@
         padding-block: f.rem(50);
         gap: f.rem(32);
 
-        &__navigation {
+        &__navigation,
+        .nav-show {
             flex-grow: 1;
             display: flex;
             align-items: center;
